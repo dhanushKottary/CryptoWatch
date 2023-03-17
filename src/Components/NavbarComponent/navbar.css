@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Space+Grotesk:wght@500&display=swap");
+
+.navitems {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  align-items: center;
+}
+
+.navitems:hover {
+  cursor: pointer;
+}
+
+.navitems p:hover {
+  background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.middle,
+.right {
+  display: flex;
+}
+
+.middle p {
+  padding: 0 17px 0 20px;
+}
+
+.right p {
+  padding: 0 0 0 17px;
+}
+
+.left {
+  font-size: 29px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
