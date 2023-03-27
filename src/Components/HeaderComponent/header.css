@@ -6,9 +6,13 @@
   box-sizing: border-box;
 }
 
+.content {
+  margin-top: 100px;
+}
+
 #first {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 #first span {
@@ -27,7 +31,7 @@
   background-image: linear-gradient(25deg, #2600fc, #ff00ea);
   color: transparent;
   background-clip: text;
-  margin-top: -15px;
+  margin-top: -40px;
   font-weight: bold;
 }
 
@@ -93,6 +97,9 @@
     display: block;
     margin-top: 10px;
   }
+  .content {
+    margin-top: 80px;
+  }
 }
 
 /* Styles for screens between 768px and 991px */
@@ -111,7 +118,7 @@
 }
 
 /* Styles for screens between 576px and 767px */
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media screen and (min-width: 565px) and (max-width: 767px) {
   #first span,
   #second span {
     font-size: 65px;
@@ -126,7 +133,7 @@
 }
 
 /* Styles for screens smaller than 576px */
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 564px) {
   #first span,
   #second span {
     font-size: 55px;
@@ -138,15 +145,22 @@
   #first img {
     display: none;
   }
-  .topCryptos {
-    display: none;
+  .topCryptos img {
+    width: 50px;
+    height: 50px;
   }
-  .showBtn {
+  .coins {
+    padding: 20px 40px 0 60px;
+    font-family: Space Grotesk, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 15px;
+  }
+  /* .showBtn {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
   }
-
   .showBtn a {
     display: inline-block;
     background: linear-gradient(25deg, #2600fc, #ff00ea);
@@ -159,5 +173,5 @@
     padding: 20px;
     text-decoration: none;
     text-align: center;
-  }
+  } */
 }

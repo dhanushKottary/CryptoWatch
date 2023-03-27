@@ -7,16 +7,8 @@
 html,
 body {
   background-image: linear-gradient(#130749 30%, #0f051d 70%);
-  height: 100%;
+  min-height: 100vh;
   background-repeat: no-repeat;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   background-size: cover;
   background-position: center;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }

@@ -5,7 +5,7 @@ export default function SpinnerComponent() {
   return (
     <>
       <div style={{ marginTop: 40 }}>
-        <GridLoader color="#3c1fde" size={35} />;
+        <GridLoader color="#3c1fde" size={35} />
       </div>
     </>
   );

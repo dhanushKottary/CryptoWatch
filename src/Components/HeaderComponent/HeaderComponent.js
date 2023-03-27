@@ -20,55 +20,55 @@ export default function HeaderComponent() {
 
   return (
     <>
-      <div id="first">
-        <img src="/bitcoin.png" alt="bitcoin" />
-        <span>Track and Trade</span>
-        <img src="/ethereum.png" alt="ethereum" />
-      </div>
-      <div id="second">
-        <span>Crypto Currencies</span>
-      </div>
-      <div className="topCryptos">
-        {isLoading ? (
-          <SpinnerComponent />
-        ) : (
-          receivedData.map((data, key) => {
-            let value =
-              Math.floor(receivedData[key].price_change_percentage_24h * 100) /
-              100;
-            return (
-              <div key={key} className="coins">
-                <img
-                  src={receivedData[key].image}
-                  alt={receivedData[key].name}
-                />
-                <p style={{ marginTop: 5 }}>
-                  <span>{receivedData[key].name} </span>
-                  <span
-                    className={`value ${value >= 0 ? "positive" : "negative"}`}
-                  >
-                    {Math.floor(
-                      receivedData[key].price_change_percentage_24h * 100
-                    ) /
-                      100 +
-                      "%"}
-                  </span>
-                </p>
-                <p style={{ marginTop: 5 }}>
-                  {"$ " +
-                    receivedData[key].current_price
-                      .toFixed(2)
-                      .replace(/\d(?=(\d{3})+\.)/g, "$&,")}
-                </p>
-              </div>
-            );
-          })
-        )}
-      </div> 
-      <div className="showBtn">
-        <a href="#home" className="showBtn">
-          See Prices <i className="fa-solid fa-angle-down fa-fw"></i>
-        </a>
+      <div className="content">
+        <div id="first">
+          <img src="/bitcoin.png" alt="bitcoin" />
+          <span>Track and Trade</span>
+          <img src="/ethereum.png" alt="ethereum" />
+        </div>
+        <div id="second">
+          <span>Crypto Currencies</span>
+        </div>
+        <div className="topCryptos">
+          {isLoading ? (
+            <SpinnerComponent />
+          ) : (
+            receivedData.map((data, key) => {
+              let value =
+                Math.floor(
+                  receivedData[key].price_change_percentage_24h * 100
+                ) / 100;
+              return (
+                <div key={key} className="coins">
+                  <img
+                    src={receivedData[key].image}
+                    alt={receivedData[key].name}
+                  />
+                  <p style={{ marginTop: 5 }}>
+                    <span>{receivedData[key].name} </span>
+                    <span
+                      className={`value ${
+                        value >= 0 ? "positive" : "negative"
+                      }`}
+                    >
+                      {Math.floor(
+                        receivedData[key].price_change_percentage_24h * 100
+                      ) /
+                        100 +
+                        "%"}
+                    </span>
+                  </p>
+                  <p style={{ marginTop: 5 }}>
+                    {"$ " +
+                      receivedData[key].current_price
+                        .toFixed(2)
+                        .replace(/\d(?=(\d{3})+\.)/g, "$&,")}
+                  </p>
+                </div>
+              );
+            })
+          )}
+        </div>
       </div>
     </>
   );

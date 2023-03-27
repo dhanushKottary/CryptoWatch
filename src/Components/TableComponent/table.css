@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Space+Grotesk:wght@500&display=swap");
+
+.header {
+  color: white;
+  font-weight: bold;
+  font-family: "Space Grotesk", sans-serif;
+  padding: 10px 0 0 30px;
+  font-size: 45px;
+  margin: 20px 0 20 0;
+}
+
+.table {
+  color: white !important;
+  font-size: 22px !important;
+  font-family: "Space Grotesk", sans-serif;
+  text-align: end;
+  vertical-align: baseline;
+}
+
+.custom-table thead {
+  background: linear-gradient(25deg, #2600fc, #ff00ea) !important;
+  white-space: nowrap;
+}
+
+.custom-table thead tr th:nth-of-type(1) {
+  text-align: left;
+  border-top-left-radius: 15px;
+}
+
+.custom-table thead tr th:nth-of-type(4) {
+  border-top-right-radius: 15px;
+}
+
+.custom-table tr:not(:first-child) {
+  line-height: 60px;
+  white-space: nowrap;
+}
+
+.custom-table .table tbody tr:hover {
+  background-color: #5518ab !important;
+}
+
+.positive {
+  color: #0ecb81;
+}
+
+.negative {
+  color: red;
+}
+
+.custom-table th.sorting:before,
+.custom-table th.sorting_desc:before,
+.custom-table th.sorting_asc:before {
+  display: none !important;
+}
+
+.row .mdb-datatable-entries .bs-select label,
+.row .mdb-datatable-info div {
+  display: none;
+}
+
+.mdb-datatable .row:nth-child(2) .justify-content-end {
+  justify-content: center !important;
+}
+
+.custom-table .pagination {
+  display: flex;
+  justify-content: center !important;
+}
+
+.pagination i {
+  background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+  color: transparent;
+  background-clip: text;
+  font-size: 30px;
+}
+
+.center-it {
+  display: flex;
+  justify-content: center;
+  margin-top: -40px;
+}
+
+/* Styles for screens between 992px and 1199px */
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+}
+
+/* Styles for screens between 768px and 991px */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .header{
+    margin-bottom: 20px;
+  }
+}
+
+/* Styles for screens between 576px and 767px */
+@media screen and (min-width: 565px) and (max-width: 767px) {
+}
+
+/* Styles for screens smaller than 576px */
+@media screen and (max-width: 565px) {
+  .header{
+    font-size: 35px;
+  }
+  .table{
+    font-size: 15px !important;
+  }
+  .custom-table tr:not(:first-child) {
+    line-height: 30px;
+  }
+}
