@@ -20,7 +20,7 @@ export default function HeaderComponent() {
 
   return (
     <>
-      <div className="content">
+      <div className="content" id="content">
         <div id="first">
           <img src="/bitcoin.png" alt="bitcoin" />
           <span>Track and Trade</span>

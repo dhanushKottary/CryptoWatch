@@ -100,7 +100,9 @@ export default function TableComponent() {
 
   return (
     <>
-      <p className="header">Market Update</p>
+      <p className="header1" id="market">
+        Market Update
+      </p>
       <div className="table-responsive px-4">
         {isLoading ? (
           <div className="center-it">

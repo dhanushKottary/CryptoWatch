@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Space+Grotesk:wght@500&display=swap");
 
-.header {
+.header1 {
   color: white;
   font-weight: bold;
   font-family: "Space Grotesk", sans-serif;
@@ -79,6 +79,10 @@
   display: flex;
   justify-content: center;
   margin-top: -40px;
+}
+
+#market{
+  padding-top: 80px;
 }
 
 /* Styles for screens between 992px and 1199px */

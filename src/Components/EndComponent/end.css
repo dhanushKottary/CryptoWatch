@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Space+Grotesk:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#join{
+  padding-top: 60px;
+}
+
+#first1 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#first1 span {
+  color: white;
+  text-transform: uppercase;
+  font-size: 90px;
+  font-family: "Space Grotesk";
+  font-weight: bold;
+}
+
+#second1 {
+  text-transform: uppercase;
+  font-size: 90px;
+  font-family: "Space Grotesk";
+  text-align: center;
+  background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+  color: transparent;
+  background-clip: text;
+  margin-top: -40px;
+  font-weight: bold;
+}
+
+#first1 img {
+  width: 70px;
+  height: 70px;
+  margin: 0 50px 0 50px;
+  animation-name: MoveUpDown;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  /* animation: MoveUpDown 1s infinite alternate; */
+}
+
+@keyframes MoveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+
+.text1 p {
+  text-align: center;
+  color: white;
+  font-family: "Space Grotesk";
+  font-size: 23px;
+}
+
+.btnn {
+  display: flex;
+  justify-content: center;
+}
+
+.showBtn1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  background: linear-gradient(25deg, #2600fc, #ff00ea);
+  border-radius: 30px;
+  border: none;
+}
+
+.showBtn1 a {
+  color: white;
+  font-size: 18px;
+  width: 220px;
+  padding: 15px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Space Grotesk";
+  font-weight: 600;
+}
+
+.showBtn1 a:hover {
+  color: white;
+}
+
+.footer1 {
+  background-color: #0f051d;
+  background-image: url(/public/footer.png);
+  background-position: 50%;
+  background-size: cover;
+  height: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.text2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.icons a {
+  color: white;
+  font-size: 35px;
+}
+
+.icons a:hover {
+  cursor: pointer;
+  background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+  color: transparent;
+  background-clip: text;
+}
+
+.details {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  font-family: "Space Grotesk";
+  font-size: 20px;
+}
+
+.signature {
+  color: white;
+  font-family: "Space Grotesk";
+  margin-top: -10px;
+  font-size: 15px;
+}
+
+/* Styles for screens between 992px and 1199px */
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+  #first1 span,
+  #second1 span {
+    font-size: 85px;
+  }
+  #second1 span {
+    display: block;
+    margin-top: 10px;
+  }
+  .text1 p {
+    font-size: 20px;
+  }
+}
+
+/* Styles for screens between 768px and 991px */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #first1 span,
+  #second1 span {
+    font-size: 75px;
+  }
+  #second1 span {
+    display: block;
+    margin-top: 10px;
+  }
+  .text1 p {
+    font-size: 20px;
+  }
+  .icons a {
+    font-size: 25px;
+  }
+  .details {
+    font-size: 15px;
+  }
+  .signature {
+    font-size: 13px;
+  }
+  .text2 {
+    width: 30%;
+  }
+}
+
+/* Styles for screens between 576px and 767px */
+@media screen and (min-width: 565px) and (max-width: 767px) {
+  #first1 span,
+  #second1 span {
+    font-size: 65px;
+  }
+  #second1 span {
+    display: block;
+    margin-top: 20px;
+  }
+  #first1 img {
+    display: none;
+  }
+  .text1 p {
+    font-size: 18px;
+  }
+  .icons a {
+    font-size: 25px;
+  }
+  .details {
+    font-size: 15px;
+  }
+  .signature {
+    font-size: 13px;
+  }
+  .text2{
+    width: 30%;
+  }
+}
+
+/* Styles for screens smaller than 576px */
+@media screen and (max-width: 564px) {
+  #first1 span,
+  #second1 span {
+    font-size: 55px;
+  }
+  #second1 span {
+    display: block;
+    margin-top: 20px;
+  }
+  #first1 img {
+    display: none;
+  }
+  .text1 p {
+    font-size: 15px;
+  }
+  .icons a {
+    font-size: 23px;
+  }
+  .details {
+    font-size: 15px;
+  }
+  .signature {
+    font-size: 12px;
+  }
+  .text2{
+    width: 45%;
+  }
+}

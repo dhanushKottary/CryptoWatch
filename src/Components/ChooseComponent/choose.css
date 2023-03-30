@@ -1,0 +1,64 @@
+.header {
+  text-transform: uppercase;
+  font-size: 75px;
+  font-family: "Space Grotesk";
+  text-align: center;
+  background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+  color: transparent;
+  background-clip: text;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.middle2 {
+  text-align: center;
+  line-height: 720px;
+}
+
+.middle2 img {
+  width: 270px;
+  height: 370px;
+  vertical-align: middle;
+}
+
+.card {
+  background-color: hsla(0, 0%, 100%, 0.05) !important;
+  border: 1px solid hsla(0, 0%, 51%, 0.25) !important;
+  border-radius: 25px !important;
+  color: white;
+  font-family: "Space Grotesk";
+}
+
+.icon2 i {
+  background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+  padding: 15px;
+  font-size: 30px;
+  border-radius: 20%;
+}
+
+.content2 {
+  padding: 25px;
+}
+
+#chooseUs{
+  padding-top: 70px;
+}
+
+/* Styles for screens between 576px and 767px */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .middle2 {
+    display: none;
+  }
+  .header{
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 575px){
+  .middle2 {
+    display: none;
+  }
+  .header{
+    font-size: 50px;
+  }
+}

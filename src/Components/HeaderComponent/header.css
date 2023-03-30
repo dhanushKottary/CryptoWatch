@@ -8,6 +8,7 @@
 
 .content {
   margin-top: 100px;
+  padding-top: 42px;
 }
 
 #first {
@@ -51,7 +52,7 @@
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-20px);
+    transform: translateY(-50px);
   }
 }
 
@@ -130,6 +131,9 @@
   #first img {
     display: none;
   }
+  #content{
+    padding-top: 50px;
+  }
 }
 
 /* Styles for screens smaller than 576px */
@@ -156,22 +160,7 @@
     text-align: center;
     font-size: 15px;
   }
-  /* .showBtn {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+  #content{
+    padding-top: 65px;
   }
-  .showBtn a {
-    display: inline-block;
-    background: linear-gradient(25deg, #2600fc, #ff00ea);
-    border-radius: 30px;
-    color: white;
-    font-weight: 700;
-    font-size: 20px;
-    text-transform: capitalize;
-    width: 200px;
-    padding: 20px;
-    text-decoration: none;
-    text-align: center;
-  } */
 }
