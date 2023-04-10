@@ -2,10 +2,16 @@ import React from "react";
 import "./header.css";
 import axios from "axios";
 import SpinnerComponent from "../SpinnerComponent/SpinnerComponent";
+import { useNavigate } from "react-router-dom";
 
 export default function HeaderComponent() {
   const [receivedData, setReceivedData] = React.useState(null);
   const [isLoading, setIsLoading] = React.useState(true);
+  const navigate = useNavigate();
+
+  const showCoin = (name) => {
+    navigate("/coinDetails/" + name, { state: { name: name } });
+  };
 
   React.useEffect(() => {
     axios
@@ -39,7 +45,13 @@ export default function HeaderComponent() {
                   receivedData[key].price_change_percentage_24h * 100
                 ) / 100;
               return (
-                <div key={key} className="coins">
+                <div
+                  key={key}
+                  className="coins"
+                  onClick={() => {
+                    showCoin(receivedData[key].id);
+                  }}
+                >
                   <img
                     src={receivedData[key].image}
                     alt={receivedData[key].name}

@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Space+Grotesk:wght@500&display=swap");
+
+/* .content{
+    padding: 0;
+    margin: 0;
+} */
+
+* {
+  font-family: Space Grotesk;
+}
+
+.left {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.navbar4 {
+  width: 100%;
+  height: 120px;
+  color: white !important;
+  background-color: #130749;
+  display: flex;
+  justify-content: space-between;
+  padding: 35px;
+  font-size: 25px;
+}
+
+.navbar4 a {
+  color: white;
+}
+
+.navbar4 a:hover {
+  background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+  color: transparent;
+  background-clip: text;
+}
+
+#end {
+  width: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 35px;
+}
+
+.positive {
+  color: #0ecb81;
+}
+
+.negative {
+  color: red;
+}
+
+.line {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+p::-webkit-scrollbar {
+  width: 9px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+p::-webkit-scrollbar-thumb {
+  background-color: #ba04b7;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.content3 {
+  margin-top: 40px;
+  color: white;
+  font-size: 20px;
+}
+
+.content3 img {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+  .content3 img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Styles for screens between 768px and 991px */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .content3 img {
+    width: 130px;
+    height: 130px;
+  }
+
+  #name {
+    font-size: 25px !important;
+  }
+
+  .content3 {
+    font-size: 19px;
+  }
+  #description {
+    font-size: 18px !important;
+  }
+  .row {
+    margin: 0;
+  }
+}
+
+/* Styles for screens between 576px and 767px */
+@media screen and (min-width: 565px) and (max-width: 767px) {
+  .content3 img {
+    width: 130px;
+    height: 130px;
+  }
+  #end {
+    width: 20%;
+  }
+}
+
+/* Styles for screens smaller than 576px */
+@media screen and (max-width: 564px) {
+  .content3 img {
+    width: 100px;
+    height: 100px;
+  }
+  #end {
+    width: 30%;
+    font-size: 30px;
+  }
+  .content3 {
+    margin-top: 20px;
+  }
+
+  #name {
+    font-size: 22px !important;
+  }
+
+  .navbar4{
+    font-size: 20px;
+  }
+}

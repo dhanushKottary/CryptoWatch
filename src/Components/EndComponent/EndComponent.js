@@ -27,24 +27,24 @@ export default function EndComponent() {
           <div className="text2">
             <div className="icons">
               <a href="https://twitter.com/" target="_blank" rel="noreferrer">
-                <i class="fa-brands fa-twitter"></i>
+                <i className="fa-brands fa-twitter"></i>
               </a>
               <a
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <i class="fa-brands fa-facebook"></i>
+                <i className="fa-brands fa-facebook"></i>
               </a>
               <a href="https://discord.com/" target="_blank" rel="noreferrer">
-                <i class="fa-brands fa-discord"></i>
+                <i className="fa-brands fa-discord"></i>
               </a>
               <a
                 href="https://www.youtube.com/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <i class="fa-brands fa-youtube"></i>
+                <i className="fa-brands fa-youtube"></i>
               </a>
             </div>
             <div className="details">
@@ -53,7 +53,7 @@ export default function EndComponent() {
             </div>
             <div className="signature">
               <p>
-                <i class="fa-solid fa-copyright"></i> Pranith
+                <i className="fa-solid fa-copyright"></i> Pranith
               </p>
             </div>
           </div>

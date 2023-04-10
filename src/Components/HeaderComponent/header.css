@@ -68,6 +68,10 @@
   height: 90px;
 }
 
+.topCryptos:hover{
+  cursor: pointer;
+}
+
 .coins {
   padding: 40px 60px 0 80px;
   font-family: Space Grotesk, sans-serif;

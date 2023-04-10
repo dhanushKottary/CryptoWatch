@@ -12,3 +12,14 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ba04b7;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}

@@ -3,10 +3,16 @@ import "./table.css";
 import { MDBDataTableV5 } from "mdbreact";
 import SpinnerComponent from "../SpinnerComponent/SpinnerComponent";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export default function TableComponent() {
   const [receivedData, setReceivedData] = React.useState(null);
   const [isLoading, setIsLoading] = React.useState(true);
+  const navigate = useNavigate();
+
+  const showCoin = (name) => {
+    navigate("/coinDetails/" + name, { state: { name: name } });
+  };
 
   React.useEffect(() => {
     axios
@@ -49,7 +55,13 @@ export default function TableComponent() {
     rows: receivedData
       ? receivedData.map((data, key) => ({
           coin: (
-            <div className="d-flex align-items-center">
+            <div
+              className="d-flex align-items-center"
+              id="firstCol"
+              onClick={() => {
+                showCoin(receivedData[key].id);
+              }}
+            >
               <img
                 src={receivedData[key].image}
                 alt={receivedData[key].name}

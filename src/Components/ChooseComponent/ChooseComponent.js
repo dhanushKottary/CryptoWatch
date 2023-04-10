@@ -20,7 +20,7 @@ export default function ChooseComponent() {
                 <MDBRow>
                   <MDBCol size="3" md="3">
                     <p className="icon2">
-                      <i class="fa-solid fa-wallet"></i>
+                      <i className="fa-solid fa-wallet"></i>
                     </p>
                   </MDBCol>
                   <MDBCol size="9" md="9" className="ps-4">
@@ -43,7 +43,7 @@ export default function ChooseComponent() {
                 <MDBRow>
                   <MDBCol size="3" md="3">
                     <p className="icon2">
-                      <i class="fa-solid fa-pen-ruler"></i>
+                      <i className="fa-solid fa-pen-ruler"></i>
                     </p>
                   </MDBCol>
                   <MDBCol size="9" md="9" className="ps-4">
@@ -64,7 +64,7 @@ export default function ChooseComponent() {
                 <MDBRow>
                   <MDBCol size="3" md="3">
                     <p className="icon2">
-                      <i class="fa-solid fa-bolt"></i>
+                      <i className="fa-solid fa-bolt"></i>
                     </p>
                   </MDBCol>
                   <MDBCol size="9" md="9" className="ps-4">
@@ -90,7 +90,7 @@ export default function ChooseComponent() {
                 <MDBRow>
                   <MDBCol size="3" md="3">
                     <p className="icon2">
-                      <i class="fa-solid fa-satellite-dish"></i>
+                      <i className="fa-solid fa-satellite-dish"></i>
                     </p>
                   </MDBCol>
                   <MDBCol size="9" md="9" className="ps-4">
@@ -111,7 +111,7 @@ export default function ChooseComponent() {
                 <MDBRow>
                   <MDBCol size="3" md="3">
                     <p className="icon2">
-                      <i class="fa-solid fa-chess-knight"></i>
+                      <i className="fa-solid fa-chess-knight"></i>
                     </p>
                   </MDBCol>
                   <MDBCol size="9" md="9" className="ps-4">
@@ -133,7 +133,7 @@ export default function ChooseComponent() {
                 <MDBRow>
                   <MDBCol size="3" md="3">
                     <p className="icon2">
-                      <i class="fa-solid fa-boxes-stacked"></i>
+                      <i className="fa-solid fa-boxes-stacked"></i>
                     </p>
                   </MDBCol>
                   <MDBCol size="9" md="9" className="ps-4">

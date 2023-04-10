@@ -1,18 +1,15 @@
-import ChooseComponent from "./Components/ChooseComponent/ChooseComponent";
-import HeaderComponent from "./Components/HeaderComponent/HeaderComponent";
-import NavbarComponent from "./Components/NavbarComponent/NavbarComponent";
-import TableComponent from "./Components/TableComponent/TableComponent";
-import EndComponent from "./Components/EndComponent/EndComponent";
+import HomePageComponent from "./Components/HomePageComponent/HomePageComponent";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import CoinDetailsComponent from "./Components/CoinDetailsComponent/CoinDetailsComponent";
 
 function App() {
   return (
-    <>
-      <NavbarComponent />
-      <HeaderComponent />
-      <TableComponent />
-      <ChooseComponent />
-      <EndComponent />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" exact element={<HomePageComponent />}></Route>
+        <Route path="/coinDetails/:name" exact element={<CoinDetailsComponent />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
