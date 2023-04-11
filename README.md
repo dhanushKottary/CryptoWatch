@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# CryptoWatch
+This website is designed to provide up-to-date information on the top 50 cryptocurrencies from around the world. It also serves as a template for individuals who want to become crypto enthusiasts and provide services related to cryptocurrency. I came across this website in one of the portfolio reviews on youtube and was completely impressed by the design. So I decided to refer to that as an template and code this website. Yes, the website is completely responsive!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Live Link
+Click on this url https://cryptowatch33.netlify.app/ and let me know how it is. Cheers!
 
-## Available Scripts
+## Steps to run the application
+1. Clone this repo into your local machine and open it using VS code or anyother editor of your choice.
+2. Open the terminal and install all the dependencies by executing the command 'npm install'.
+3. Once the installations are completed run the command 'npm start'.
+4. http://localhost:3000/ will be running in your browser and you are on the landing page of the website!
 
-In the project directory, you can run:
+## Operation that can be performed
+Click on the name or icon of the cryptocurrencies on the header or the table to know more details about that particular coin.
 
-### `npm start`
+## API Used
+https://www.coingecko.com/en/api/documentation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Snapshots
+### Home Page - Header Section
+![Screenshot (389)](https://user-images.githubusercontent.com/65860350/231131378-0fb7d37c-aff6-48e9-92e5-2755c3c9c64a.png)
+### Market Section
+![Screenshot (390)](https://user-images.githubusercontent.com/65860350/231131467-729a5a45-30fa-4cb6-830f-d35b3c0e79e7.png)
+### Services Section
+![Screenshot (391)](https://user-images.githubusercontent.com/65860350/231131533-5238f26e-16ba-4261-8445-8c69628964e3.png)
+### Socials Section
+![Screenshot (392)](https://user-images.githubusercontent.com/65860350/231131638-29d88cf0-4c61-48b8-a09f-89ab08441c40.png)
+### Coin Details Section
+![Screenshot (393)](https://user-images.githubusercontent.com/65860350/231131692-6e84b264-153e-4e7e-859f-c3ece9b098f2.png)
