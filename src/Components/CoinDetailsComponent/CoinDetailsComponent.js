@@ -8,6 +8,7 @@ import "./style.css";
 export default function CoinDetailsComponent() {
   const [receivedData, setReceivedData] = React.useState(null);
   const [isLoading, setIsLoading] = React.useState(true);
+  const [error, setError] = React.useState(null);
   const location = useLocation();
   const coin = location.state.name;
 
@@ -21,8 +22,23 @@ export default function CoinDetailsComponent() {
       .then((response) => {
         setReceivedData(response.data);
         setIsLoading(false);
+      })
+      .catch((error) => {
+        setError(error);
+        setIsLoading(false);
       });
   }, [coin]);
+
+  if (error) {
+    return (
+      <div className="error-message">
+        <p>Failed retrieving data. Please try again later</p>
+        <a href="/">
+          <i className="fa-solid fa-arrow-left"></i> Back
+        </a>
+      </div>
+    );
+  }
 
   return (
     <>
@@ -121,7 +137,10 @@ export default function CoinDetailsComponent() {
                     padding: "10px",
                   }}
                   dangerouslySetInnerHTML={{
-                    __html: receivedData.description.en,
+                    __html:
+                      receivedData.description && receivedData.description.en
+                        ? "Description: " + receivedData.description.en
+                        : "Description: No data found",
                   }}
                 ></p>
               </div>

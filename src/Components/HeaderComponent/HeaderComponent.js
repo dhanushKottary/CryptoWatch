@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 export default function HeaderComponent() {
   const [receivedData, setReceivedData] = React.useState(null);
   const [isLoading, setIsLoading] = React.useState(true);
+  const [error, setError] = React.useState(null);
   const navigate = useNavigate();
 
   const showCoin = (name) => {
@@ -20,6 +21,10 @@ export default function HeaderComponent() {
       )
       .then((response) => {
         setReceivedData(response.data);
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        setError(error);
         setIsLoading(false);
       });
   }, []);
@@ -36,7 +41,9 @@ export default function HeaderComponent() {
           <span>Crypto Currencies</span>
         </div>
         <div className="topCryptos">
-          {isLoading ? (
+          {error ? (
+            <p>Failed retrieving data. Please try again later</p>
+          ) : isLoading ? (
             <SpinnerComponent />
           ) : (
             receivedData.map((data, key) => {

@@ -72,6 +72,12 @@
   cursor: pointer;
 }
 
+.topCryptos p{
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+
 .coins {
   padding: 40px 60px 0 80px;
   font-family: Space Grotesk, sans-serif;
@@ -138,6 +144,9 @@
   #content{
     padding-top: 50px;
   }
+  .topCryptos p{
+    font-size: 20px;
+  }
 }
 
 /* Styles for screens smaller than 576px */
@@ -166,5 +175,10 @@
   }
   #content{
     padding-top: 65px;
+  }
+  .topCryptos p{
+    font-size: 17px;
+    margin-top: 20px;
+    padding: 15px;
   }
 }

@@ -83,6 +83,26 @@ p::-webkit-scrollbar-thumb {
   margin-bottom: 20px;
 }
 
+.error-message {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.error-message a {
+  color: white;
+}
+
+.error-message a:hover {
+  background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+  color: transparent;
+  background-clip: text;
+}
+
 @media screen and (min-width: 993px) and (max-width: 1199px) {
   .content3 img {
     width: 150px;
@@ -141,7 +161,7 @@ p::-webkit-scrollbar-thumb {
     font-size: 22px !important;
   }
 
-  .navbar4{
+  .navbar4 {
     font-size: 20px;
   }
 }
